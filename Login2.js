@@ -1,6 +1,7 @@
 //Model
 let View = document.getElementById('app');
 
+//View
 brukerView();
 function brukerView() {
     View.innerHTML = `
