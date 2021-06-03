@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Test Suite</title>
+<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.15.0.css">
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+  <script src="https://code.jquery.com/qunit/qunit-2.15.0.js"></script>
+  <script src="Login.js"></script>
+
+  <script>
+    function brukerView() {
+
+    }
+    function passordView() {
+
+    }
+    function loggedInView() {
+
+    }
+
+    QUnit.test('Riktig brukernavn', function(assert) {
+      const actual = checkUserID("Lars");
+      const expected = "Riktig";
+        assert.equal(actual, expected);
+      });
+
+    QUnit.test('Ingenting skrevet inn', function(assert) {
+      const actual = checkUserID("L");
+      const expected = "Feil brukernavn";
+        assert.equal(actual, expected);
+      });
+
+    QUnit.test('Riktig passord', function(assert) {
+      const actual = checkUserPass("GET123");
+      const expected = "Riktig passord!";
+        assert.equal(actual, expected);
+      });
+  </script>
+</body>

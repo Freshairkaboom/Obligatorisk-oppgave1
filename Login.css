@@ -1,0 +1,24 @@
+body {
+    background-color:cornsilk;
+}
+
+h1 {
+   border: 2px solid black;
+   cursor:pointer;
+   text-align: center;
+   border-inline: 2px;
+   margin: -10px;
+}
+
+.loginbox {
+    background-color: gray;
+    color: white;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+
+}
+
+button {
+    cursor: pointer;
+}
