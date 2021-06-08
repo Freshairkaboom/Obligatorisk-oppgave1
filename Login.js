@@ -5,8 +5,9 @@ let loginPass = "";
 //Controller
 function checkUserID(id) {
     if (id == "Lars" || id == "Kasper" || id == "Morten" || id == "Nanna" || id == "Terje" || id == "Joakim" || id == "Therese") {
+        loginID = id;
         passordView();
-        return "Riktig";
+        return loginID;
     }
     else {
         brukerView();
@@ -15,8 +16,9 @@ function checkUserID(id) {
 }
 function checkUserPass(pass) {
     if (pass === "GET123" || pass === "123GET") {
+        loginPass = pass;
         loggedInView();
-        return "Riktig passord!"
+        return loginPass;
     }
     else {
         alert('Du valgte feil passord!')
