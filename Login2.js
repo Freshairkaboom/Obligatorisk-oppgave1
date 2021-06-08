@@ -38,6 +38,6 @@ function passordView() {
 }
 function loggedInView() {
     View.innerHTML = `
-    <div><h1>Du er logget inn som` + checkuserID() + `!</h1><div>
+    <div><h1>Du er logget inn som` + checkuserID(LoginID) + `!</h1><div>
     `
 }
