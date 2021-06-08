@@ -21,7 +21,18 @@
 
     QUnit.test('Riktig brukernavn', function(assert) {
       const actual = checkUserID("Lars");
-      const expected = "Riktig";
+      const expected = loginID;
+        assert.equal(actual, expected);
+      });
+    QUnit.test('Riktig brukernavn MVC', function(assert) {
+      checkUserID("Lars")
+      const actual = loginID;
+      const expected = "Lars";
+        assert.equal(actual, expected);
+      });
+    QUnit.test('Riktig brukernavn', function(assert) {
+      const actual = checkUserID("Lars");
+      const expected = loginID;
         assert.equal(actual, expected);
       });
 
@@ -33,7 +44,7 @@
 
     QUnit.test('Riktig passord', function(assert) {
       const actual = checkUserPass("GET123");
-      const expected = "Riktig passord!";
+      const expected = loginPass;
         assert.equal(actual, expected);
       });
   </script>
